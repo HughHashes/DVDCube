@@ -1,11 +1,11 @@
 var x = 50;
 var y = 50;
-var changeX = 5;
-var changeY = 5;
+var changeX = 3;
+var changeY = 3;
 var img;
 
 function preload() {
-  img = loadImage("budi.png");
+  img = loadImage("dvd.jpg");
 }
 
 function setup() {
@@ -26,7 +26,7 @@ function display(){
     stroke(255);
     strokeWeight(4);
     fill(50,250,50);
-    image(img, x, y, 100, 100);
+    image(img, x, y, 100, 80);
 }
 
 function bounce(){
@@ -42,7 +42,7 @@ function bounce(){
         changeY = -changeY;
     };
     
-    if(y + 100 > 400){
+    if(y + 80 > 400){
         changeY = -changeY;
     };
     
