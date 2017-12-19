@@ -1,7 +1,7 @@
 var x = 50;
 var y = 50;
-var changeX = 3;
-var changeY = 3;
+var changeX = 5;
+var changeY = 5;
 var img;
 var cnv;
 
