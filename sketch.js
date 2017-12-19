@@ -3,13 +3,17 @@ var y = 50;
 var changeX = 3;
 var changeY = 3;
 var img;
+var cnv;
 
 function preload() {
   img = loadImage("dvd.jpg");
 }
 
 function setup() {
-    createCanvas(600, 400);
+    var cnv = createCanvas(windowWidth, windowHeight);
+    // positions canvas 50px to the right and 100px
+    // below upper left corner of the window
+    cnv.position(0, 0);
 }
 
 function draw() {
@@ -34,7 +38,7 @@ function bounce(){
         changeX = -changeX;
     };
     
-    if(x + 100 > 600){
+    if(x + 100 > windowWidth){
         changeX = -changeX;
     };
     
@@ -42,7 +46,7 @@ function bounce(){
         changeY = -changeY;
     };
     
-    if(y + 80 > 400){
+    if(y + 80 > windowHeight){
         changeY = -changeY;
     };
     
